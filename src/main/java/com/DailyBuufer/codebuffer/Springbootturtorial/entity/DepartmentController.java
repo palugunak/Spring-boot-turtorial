@@ -1,5 +1,6 @@
 package com.DailyBuufer.codebuffer.Springbootturtorial.entity;
 
+import com.DailyBuufer.codebuffer.Springbootturtorial.ErrorHandling.DeparmentExceptionHandling;
 import com.DailyBuufer.codebuffer.Springbootturtorial.service.DepartmentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +31,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/departments/{id}")
-    public Department fetchDeparmentbyId(@PathVariable("id") Long deparmentId){
+    public Department fetchDeparmentbyId(@PathVariable("id") Long deparmentId) throws DeparmentExceptionHandling {
        return departmentService.fetchDepartmentId(deparmentId);
     }
     @PutMapping("/departments/{id}")
