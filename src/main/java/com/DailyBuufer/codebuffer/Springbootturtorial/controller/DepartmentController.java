@@ -1,6 +1,7 @@
-package com.DailyBuufer.codebuffer.Springbootturtorial.entity;
+package com.DailyBuufer.codebuffer.Springbootturtorial.controller;
 
 import com.DailyBuufer.codebuffer.Springbootturtorial.ErrorHandling.DeparmentExceptionHandling;
+import com.DailyBuufer.codebuffer.Springbootturtorial.entity.Department;
 import com.DailyBuufer.codebuffer.Springbootturtorial.service.DepartmentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
